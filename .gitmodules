@@ -1,0 +1,6 @@
+[submodule "Advanced-Redux"]
+	path = Advanced-Redux
+	url = ./Advanced-Redux
+[submodule "Food-Order"]
+	path = Food-Order
+	url = ./Food-Order

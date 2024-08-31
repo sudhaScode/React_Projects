@@ -1,0 +1,89 @@
+body {
+    font-family: sans-serif;
+    background-color: hwb(0 93% 5%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #app {
+    margin-top: 30vh;
+    margin-bottom: 20px;
+  }
+input {
+    padding: 13px;
+    width: 17vw;
+    outline: none;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  .profie-main {
+    border: 5px;
+    border-radius: 10px;
+    background-color: hwb(0 15% 82% / 0.961);
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    color: white;
+    align-items: center;
+  }
+  .profile-image {
+    margin-left: 20px;
+
+  }
+  .image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid rgb(253, 212, 212);
+  }
+  .profile{
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  .name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(222, 226, 230);
+  }
+  .bio{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(222, 226, 230);
+    font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .stats{
+    display: flex;
+    padding: 2px;
+    list-style: none;
+    font-size: smaller;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(209, 213, 217);
+    font-weight: 300;
+  }
+  .stats li{
+    margin-right: 10px;
+  }
+  .social{
+    display:flex;
+    list-style: none;
+    margin-top: 10px;
+    justify-content: space-between;
+    font-size: smaller;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(209, 213, 217);
+    font-weight: 300;
+    margin-left: -38px;
+  }
+  .social li{
+    margin-right: 10px;
+  }
+

@@ -1,0 +1,125 @@
+body {
+  font-family: sans-serif;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+#app {
+  min-height: 100vh;
+  width: 100%;
+  background: #239ec4;
+  background: linear-gradient(to right, rgb(75, 121, 161), rgb(40, 62, 81));
+}
+@media screen and (max-width: 784px) {
+}
+#todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 6%;
+}
+.header {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin: 0%;
+  padding: 0%;
+  font-size: 6vh;
+}
+h2 {
+  padding: 0%;
+  padding-top: 10px;
+  margin: 0%;
+  font-size: 5vh;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  border: rgb(207, 206, 206) solid 1px;
+  padding: 0;
+  margin-top: 5%;
+  height: 7vh;
+  width: 50vmax;
+  text-align: center;
+}
+
+.input-field {
+  padding: 8px;
+  padding-left: 20px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  height: 100%;
+  width: 95%;
+  font-size: 20px;
+}
+
+.add-button {
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 25px;
+  padding: 0 15px;
+  margin: 0;
+  border: #ccc solid 1px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: none;
+  border-bottom-left-radius: none;
+  cursor: pointer;
+}
+.reset {
+  margin-top: 3%;
+  width: 50vmax;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#reset-button {
+  border-radius: 6px;
+  border: none;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.list-card {
+  margin-top: 2%;
+  background-color: white;
+  width: 50vw;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+}
+.checkbox::checked {
+  transition-property: box-shadow;
+  transition-duration: 5s;
+  border-width: 2px;
+  border-style: solid;
+  border-image: initial;
+  border-radius: 5px;
+}
+.task-content input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.task {
+  border-bottom: 1px solid #ccc;
+  height: 60px;
+}
+.task-content {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.task-content label {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  padding-left: 6px;
+}

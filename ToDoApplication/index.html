@@ -1,0 +1,46 @@
+<!--TO DO APPLICATION-->
+
+<html>
+  <head>
+    <title>Todo Application</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css">
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="todo">
+        <div class="header">
+          <h1>Todo</h1>
+          <h2 id="date"></h2>
+        </div>
+        <div class="input-container">
+          <input
+            placeholder="New To do..."
+            type="text"
+            name="newtodo"
+            class="input-field"
+            id="new-todo"
+          />
+          <button class="add-button" type="submit">+</button>
+        </div>
+        <p id ="error"></p>
+        <div class="reset">
+          <button id="reset-button">Clear All</button>
+        </div>
+       
+        <div class="list-card">
+          <!--
+          <div class="task1">
+            <div class="task-content">
+              <input type="checkbox" class="checkbox" />
+              <label>Complete QTripDynamic</label>
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "qtrip",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

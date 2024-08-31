@@ -1,0 +1,14 @@
+body, html, #root {
+  height: 100%;
+}
+.app-container{
+  background-image: url('./asset/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+  padding: 0;
+  }

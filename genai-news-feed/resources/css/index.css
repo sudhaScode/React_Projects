@@ -1,0 +1,106 @@
+@media only screen and (min-width: 765px)  {
+
+
+    
+}
+h5{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+}
+.header{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+.navbar-brand-icon{
+    height: 9px;
+    width: 60px;
+    background-image: linear-gradient(to right, #E537B9, #C040DF);
+    border-radius: 5px;
+    position: absolute;
+    top: 4;
+}
+.feed-divider{
+    background-color: rgb(209, 207, 207);
+    width: 100vw;
+    height:1.5px;
+}
+.feed-container{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 2vh;
+}
+.latest{
+    font-family: Montserrat;
+}
+.latest h4{
+    font-weight: 700;
+}
+.latest p{
+    font-size: 18px;
+    color:  #858585;
+}
+
+.technology-body, .sports-body,.politics-body{
+    width:100%;
+    border-bottom:3px solid #ebe7e7;
+    padding-top: 10px;
+}
+.politics, .technology, .sports{
+    margin-bottom: 1rem;
+}
+.nav-button-next,.nav-button-prev{
+    height: 70%;
+}
+/*
+.news-card {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.news-image img {
+    width: 80%;
+    height: 200px; 
+    display: block;
+}
+
+.news-body {
+    padding: 10px;
+}
+*/
+.news-card{
+    border-radius: 3px;
+     overflow: hidden;
+    
+}
+.news-image img{
+    border-radius: 2px;
+    width: 100%;
+    height: 350px; 
+    display: block;
+}
+
+.news-body{
+    padding: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    
+}
+.carousel-control-next, .carousel-control-prev{
+    height: 70%;
+
+}
+.accordion-item{
+  border: none;
+}
+
+.featured{
+    border: 1.5px solid rgb(240, 204, 204);
+    margin-top: 3rem;
+    padding: 20px;
+    border-radius: 5px;
+}
+

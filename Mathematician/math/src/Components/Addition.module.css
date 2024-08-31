@@ -1,0 +1,105 @@
+
+
+.part{
+   margin: 2rem auto;
+   width: 100%;
+   max-width: 40rem;
+   
+}
+/*level css*/
+.level{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   gap: 30px; 
+   padding: 0; /* Reset padding */
+  margin: 0; /* Reset margin */
+}
+
+.click{
+   cursor: pointer;
+   border: none;
+   border-radius: 2rem;
+   font-size: 15px;
+   background-color: transparent; 
+}
+.clicked{
+   border-radius: 2rem ; 
+   border: none;
+   font-size: 25px;
+   background-color: transparent; 
+   color: rgb(234, 85, 224);
+   font-family: fantasy;
+}
+/*devider*/
+.divider{
+   padding: 3px;
+   background-color: #000000;
+}
+
+.numberlist{
+   list-style: none; /* Remove default list styles */
+   padding: 10px;
+   display: flex;
+   justify-content: center; /* Center horizontally */
+}
+.number{
+   margin: 10px; /* Add some margin between list items if needed */
+   text-align: center; /* Center the label text */ 
+}
+.operator{
+display: inline-block;
+  padding: 10px;
+  color: #000000;
+  font-size: 50px;
+  width: 30px; /* Set the width */
+  height: 30px; /* Set the height */
+  text-align: center; /* Center the text horizontally */
+  line-height: 100px; /* Center the text vertically */
+}
+
+.input {
+   display: inline-block;
+   padding: 10px;
+   background-color: #de8bd8; /* Button-like background color */
+   color: #ffffff; /* Text color */
+   cursor: pointer;
+   font-size: 20px;
+   border-radius: 1rem;
+   /* Add any other label styles you need */
+ }
+ .enter{
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+   width: 200px;
+   height: 10px;
+   padding: 10px;
+ }
+ .result{
+   display: block;
+   text-align: center;
+ }
+ .wrong{
+   display: block;
+   text-align: center;
+   color: red;
+ }
+
+.submit{
+   background-color: rgb(227, 184, 118);
+   margin: 0 auto;
+   text-align: center;
+   width: 200px;
+   height: 50px;
+   padding: 8px;
+   border-radius: 1rem;
+}
+.continue{
+      size: 20px;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+}
+

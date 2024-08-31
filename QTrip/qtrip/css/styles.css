@@ -1,0 +1,361 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html, 
+body{
+  position: relative;
+}
+
+body {
+  overflow-y: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin:0;
+
+}
+main{
+  flex:1;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+footer {
+  
+  background: #f1f1f1;
+  width: 100%;
+  padding: 16px 0px;
+  color: #999;
+  vertical-align: bottom;
+  text-align: center; 
+  flex-shrink: 0;
+  margin-top: auto;
+  /* width: 100%; */
+  /* height: 2.5rem;   */
+}
+
+.banner {
+  height: 500px;
+  width: 100%;
+  background: #999;
+  margin: 20px 0px;
+}
+
+.content {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  padding: 0;
+  margin: 0;
+}
+
+/* ================================== */
+/* Layout page CSS */
+/* ================================== */
+.container{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+.tile {
+  /* TODO: MODULE_CARDS */
+  /* 1. Fill in the required properties. */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  border-radius: 8px;
+  
+
+  
+}
+.tile img {
+  /* TODO: MODULE_CARDS */
+  /* 1. Fill in the required properties. */
+   height: 100% ;
+   width: 100%;
+   border-radius: 8px; 
+
+   cursor: pointer;
+   transition: 0.5s all;
+
+
+}
+.tile img:hover {
+  /* TODO: MODULE_CARDS */
+  /* 1. Fill in the required properties. */
+  filter: brightness(50%);
+  transform: scale(1.1);
+  
+}
+
+/* Hint: Notice the position:absolute and z-index properties. */
+/* Think about how those in relation to the existing "tile" classes. 
+*/
+.tile-text {
+  position:absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.hero-image{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/hero.jpg");
+  height: 20rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  
+  
+  /* TODO: MODULE_LAYOUT */
+  /* 1. Set a specific height. */
+  /* 2. Position and center the image to scale nicely on all screens.
+  */
+}
+
+.hero-subheading {
+  font-size: 24px;
+  font-weight: 100;
+  font-family:sans-serif;
+  text-align: center;
+}
+.hero-input {
+  width: 80%;
+  height: 50px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+
+.nav-link {
+  margin-right: 36px;
+}
+
+/* ================================== */
+/* Adventures grid page CSS */
+/* ================================== */
+
+.heading{
+    font-size: 30px;
+    font-weight:700;
+}
+.sub-heading{
+  font-size: 20px;
+}
+
+/* ================================== */
+/* Adventures grid page CSS */
+/* ================================== */
+
+.adventure-card {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+  overflow: hidden;
+  border: 1px solid rgb(210, 208, 208);
+  border-radius: 8px;
+  padding: 0%;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  
+}
+.adventure-card img {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+  transition: 0.5s all;
+  height: 260px;
+  width:100%;
+  object-fit: cover;
+  object-position: center;
+
+
+}
+.adventure-card img:hover {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+  filter:brightness(50%);
+}
+
+/* ================================== */
+/* Adventure details page CSS */
+/* ================================== */
+@media screen and (min-width: 576px){
+.adventure-detail-card {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+font-size: 20px;
+font-weight: 600;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+display: flex;
+justify-content: space-between;
+padding: 5px;
+
+}
+}
+@media screen and (max-width: 576px){
+  .adventure-card {
+    /* TODO: MODULE_ADVENTURES_GRID */
+    /* 1. Fill in the required properties. */
+    overflow: hidden;
+    border: 1px solid rgb(210, 208, 208);
+    border-radius: 8px;
+    padding: 0%;
+    position: relative;
+    height: 320px;
+    width: 100%;
+    
+  }
+  .adventure-detail-card {
+    /* TODO: MODULE_ADVENTURE_DETAILS */
+    /* 1. Fill in the required properties. */
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+}
+.adventure-detail-card p{
+  margin: 0;
+}
+
+
+.adventure-card-image {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+
+}
+.adventure-card-image:hover {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+}
+/* ================================== */
+/* Individual Adventure details page CSS */
+/* ================================== */
+
+.divider{
+  width: 100%;
+  height: 1px;
+  border-radius: 1px;
+  background-color: rgb(192, 189, 189);
+}
+.big-card img{
+  border-radius: 2px;
+  transition: 1s all;
+  cursor: crosshair;
+}
+.small-card img{
+  border-radius: 2px;
+  transition: 1s all;
+  height: 95%;
+  cursor: crosshair;
+}
+.big-card img:hover{
+  filter: brightness(50%);
+}
+.small-card img:hover{
+  filter: brightness(50%);
+}
+@media screen and (max-width:992px) {
+.sold{
+  margin-top: 3rem;
+}
+  
+}
+.sold{
+  padding-left: 0.5rem; 
+}
+.sold a:hover{
+  background-color: aqua;
+}
+
+.sold p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+.title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px
+}
+.sub-title{
+  font-family:  'Times New Roman';
+  color: #8d8686;
+  font-weight: 500;
+  font-size: 18px;
+  
+}
+
+
+.about{
+  margin-top: 0.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+.inclusion ul, .know ul{
+    margin-top: 5px;
+}
+
+/*
+.gallary{
+  display: grid;
+  grid-template-rows: repeat(2, 10rem);
+  grid-template-columns: repeat(2 ,15rem);
+
+}
+
+.gallary-item-one{
+grid-row-start: 0;
+grid-row-end: 3;
+ grid-column-start: 0;
+ grid-column-end: 3;
+
+}
+.gallary-item-two{
+  grid-row-start: 0;
+  grid-row-end: 2;
+   grid-column-start: 3;
+   grid-column-end: 3;
+
+}
+.gallary-item-three{
+  grid-row-start: 2;
+  grid-row-end: 3;
+   grid-column-start: 3;
+   grid-column-end: 3;
+
+
+}*/
+
+.experience-content ul li {
+  margin-left: 16px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktops phones: */
+  #reservation {
+    width: 400px;
+    position: fixed;
+  }
+}

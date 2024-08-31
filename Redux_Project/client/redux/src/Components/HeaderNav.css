@@ -1,0 +1,7 @@
+.headernav{
+    padding: 0.75rem 3rem;
+}   
+.headernav button{
+    background-color: rgb(255, 200, 0);
+    color:black;
+}
